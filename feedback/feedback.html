@@ -75,10 +75,6 @@ var url
 var file,
 reader = new FileReader();
 // Upload the file to Google Drive
-reader.onloadend = function (e) {
-console.log(e.target.result);
-url = google.script.run.uploadFileToGoogleDrive(e.target.result, file.name, data);
-};
 // document.getElementById("submit").addEventListener("click", saveData);
 function saveData() {
 data = {
